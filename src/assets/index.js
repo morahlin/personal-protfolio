@@ -4,6 +4,7 @@ import sefe from './sefe.jpeg'
 import profolio from './profolio.png'
 import hero_img_light from './hero_img_light .png'
 import blogged from './blogged.png'
+import Morahlin from './Morahlin.png'
 
 
 
@@ -17,5 +18,6 @@ export {
   sefe,
     profolio,
     blogged,
+    Morahlin,
 
 }

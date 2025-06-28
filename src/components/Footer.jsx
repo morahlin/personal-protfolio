@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo.jsx'
-import Footlinks from '../constants'
+import {  Footlinks } from '../constants'
 import { useState } from 'react';
 
 const Footer = () => {

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import {  Hero, Projects } from '../components'
+import { GetInTouch, GetToKnow, Hero, Projects } from '../components'
 import { Helmet } from 'react-helmet';
 
 
@@ -19,7 +19,8 @@ const Home = () => {
     <div className="pt-[8%] mx-3 md:mx-0 w-[90vw]">
               <Hero />
               <Projects />
-            
+               <GetToKnow />
+              <GetInTouch />
             </div>
     </>
   )

@@ -1,4 +1,4 @@
-import { profolio, blogged } from '../assets';
+import { profolio, blogged, Morahlin } from '../assets';
 
 export const projects = [
   {
@@ -44,6 +44,28 @@ export const projects = [
     image: blogged,
     source_code_link: "https://github.com/morahlin/blog",
     live_preview_link: "https://morahlinblog.vercel.app/"
+  },
+  {
+    name: "Gradient Card",
+    description:
+      "Gradient Card is a visually engaging UI component designed to showcase content within a stylish gradient background. Built using ReactJS and TailwindCSS, the card combines smooth color transitions with modern layout techniques to enhance user experience and interface aesthetics..",
+    tags: [
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Morahlin,
+    source_code_link: "https://github.com/morahlin/Gradient-card",
+    live_preview_link: "https://gradient-card.vercel.app/"
   },
 ];
 
@@ -120,4 +142,8 @@ const Footlinks = [
 
 ]
 
-export default Footlinks;
+export { 
+    know,
+  
+    Footlinks
+};

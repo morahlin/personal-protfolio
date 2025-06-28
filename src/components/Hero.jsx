@@ -37,7 +37,7 @@ const Hero = () => {
             className="flex gap-[16px] flex-wrap justify-start md:justify-normal"
           >
             <motion.a
-              href="https://flowcv.com/resume/i3lmv0o0pwjj"
+              href="https://flowcv.com/resume/34q1jvd2lsoh"
               target="_blank"
               rel="noreferrer"
               variants={zoomIn(0.7, 1)}

@@ -159,7 +159,7 @@ input, textarea{
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background: #fff;
+    background: #000;
   }
 
   .hero_img_dark{
