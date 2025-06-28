@@ -121,7 +121,7 @@ const Footlinks = [
   links: [
     {
       name: 'Email',
-      id: 'morahlinmorahmorahlin@gmail.com',
+      id: 'mailto:morahlinmorahmorahlin@gmail.com',
     },
     {
       name: 'LinkedIn',

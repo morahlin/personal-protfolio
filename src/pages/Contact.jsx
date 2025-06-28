@@ -34,39 +34,39 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setLoading(true);
-    setSendButton('Sending...');
-
     if (!emailRegex.test(form.email)) {
       setIsValidEmail(false);
-      setLoading(false);
-      setSendButton('Send');
       return;
     }
 
-    const phoneNumber = '2349055492653'; // 🇳🇬 Nigeria number in international format (no "+")
-    const message = `Hello Morahlin! 👋\n\n` +
-      `My name is ${form.name}.\n` +
-      `Email: ${form.email}\n\n` +
-      `Message:\n${form.message}`;
+    setLoading(true);
+    setSendButton('Redirecting...');
 
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/[09055492653]?text=[ Hi, I'm MØRÅHŁĮŇ 💻🎨, a passionate web developer and graphic designer 💡. With a keen eye for detail 🔍 and a love for creativity 🎨, I craft engaging digital experiences that bring ideas to life 💫. My expertise spans web development 💻, graphic design 📈, and more 🤔. I'm always looking to push boundaries 🚀 and deliver innovative solutions 💥. Let's connect and see how I can help bring your vision to reality! 📲👋`;
+    const phoneNumber = '2349055492653'; // Replace with YOUR WhatsApp number (no "+" or leading zero)
 
+    const message = `👋 Hello Morahlin!%0A%0A` +
+      `My name is ${form.name}.%0A` +
+      `Email: ${form.email}%0A%0A` +
+      `Message:%0A${encodeURIComponent(form.message)}`;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    // Open WhatsApp with pre-filled message
     window.open(whatsappURL, '_blank');
 
-    setLoading(false);
-    setSendButton('Sent!');
-    setTimeout(() => setSendButton('Send'), 2000);
-
-    setForm({
-      name: '',
-      email: '',
-      message: '',
-    });
+    setTimeout(() => {
+      setSendButton('Sent!');
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+      setLoading(false);
+      setTimeout(() => setSendButton('Send'), 2000);
+    }, 1000);
   };
 
- return (
+  return (
     <div className='w-[95vw] md:w-full flex items-center justify-center py-20 px-16 overflow-hidden'>
       <div  className='flex flex-col items-start justify-center gap-12' >
        <div 
@@ -76,7 +76,7 @@ const Contact = () => {
        data-aos-delay='0.5'
        data-aos-mirror="false"
        className="md:p-0 p-4">
-       <h1 className='font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7 '>Get in touch</h1>
+       <h1 className='font-black lg:text-[80px] sm:text-[60px] text-[38px] lg:leading-[98px] mt-7 '>Connect with Me</h1>
         <p className='text-[18px]'>Let's build something awesome!</p>
        </div>
 
@@ -123,7 +123,7 @@ const Contact = () => {
               </label>
 
           <label htmlFor="" className="flex flex-col">
-            <span className=' font-medium mb-4'>Your Message:</span>
+            <span className=' font-medium mb-4'>Submit Your Message:</span>
             <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="Write your message here" required className='placeholder:text-[#808080] bg-tranparent outline-none p-4  border-[0.5px] border-[#808080] rounded-2xl ' />
           </label>
 
