@@ -4,6 +4,8 @@ import Home from './pages/Home.jsx'
 import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import About from './pages/About.jsx'
+import Stack from './pages/Stack.jsx'
+import Blog from './pages/Blog.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/stack" element={<Stack />} />
+            <Route path="/blog" element={<Blog />} />
         
           </Routes>
           <Footer />

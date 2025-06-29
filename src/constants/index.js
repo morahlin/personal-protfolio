@@ -1,5 +1,34 @@
 import { profolio, blogged, Morahlin } from '../assets';
 
+
+import {
+  CSS,
+  figma,
+  Github,
+  html,
+  javascript,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  chatgpt,
+  discord,
+  duolingo,
+  firebase,
+  framer,
+  graphql,
+  next,
+  slack,
+  notion,
+  ts,
+  trello,
+  vercel,
+  vscode,
+  netlify,
+  spotify
+
+} from '../assets/tech'
+
 export const projects = [
   {
     name: "slider-crazy-effects",
@@ -91,59 +120,166 @@ const know = [
 ];
 
 const Footlinks = [
- {
-  name: 'Links',
-  links: [
+  {
+    name: 'Links',
+    links: [
+      {
+        name: 'About',
+        id: '/about',
+      },
+      {
+        name: 'Projects',
+        id: '/#projects',
+      },
+      {
+        name: 'Tech Stack',
+        id: '/stack',
+      },
+      {
+        name: 'Contact',
+        id: '/contact',
+      },
+      {
+        name: 'Blog',
+        id: '/blog'
+      }
+    ]
+  },
+  {
+    name: 'Elsewhere',
+    links: [
+      {
+        name: 'Email',
+        id: 'mailto:morahlinmorahmorahlin@gmail.com',
+      },
+      {
+        name: 'LinkedIn',
+        id: '',
+      },
+      {
+        name: 'GitHub',
+        id: 'https://github.com/morahlin',
+      },
+      {
+        name: 'Facebook',
+        id: 'https://www.facebook.com/profile.php?id=100094192264039',
+      },
+    ]
+  }
+];
+
+const tech = {
+  dev: [
     {
-      name: 'About',
-      id: '/about',
+      logo: reactjs,
+      name: 'ReactJS',
+      description: 'Web Framework',
     },
     {
-      name: 'Projects',
-      id: '/#projects',
+      logo: javascript,
+      name: 'JavaScript',
+      description: 'Web Framework',
     },
     {
-      name: 'Tech Stack',
-      id: '/stack',
+      logo: next,
+      name: 'NextJS',
+      description: 'Web Framework',
     },
     {
-      name: 'Contact',
-      id: '/contact',
+      logo: nodejs,
+      name: 'NodeJS',
+      description: 'Web Framework',
     },
     {
-      name: 'Blog',
-      id: '/blog'
+      logo: ts,
+      name: 'TypeScript',
+      description: 'Web Framework',
+    },
+    {
+      logo: html,
+      name: 'HTML5',
+      description: 'Web Framework',
+    },
+    {
+      logo: CSS,
+      name: 'CSS3',
+      description: 'CSS',
+    },
+    {
+      logo: tailwind,
+      name: 'TailwindCSS',
+      description: 'CSS',
+    },
+  
+    {
+      logo: figma,
+      name: 'Figma',
+      description: 'Design',
+    },
+    {
+      logo: graphql,
+      name: 'GraphQL',
+      description: 'Database',
+    },
+    {
+      logo: firebase,
+      name: 'Firebase',
+      description: 'Database',
+    },
+    {
+      logo: vercel,
+      name: 'Vercel',
+      description: 'Deployment',
+    },
+    {
+      logo: netlify,
+      name: 'Netlify',
+      description: 'Deployment',
+    },
+    {
+      logo: framer,
+      name: 'Framer Motion',
+      description: 'Animation',
+    },
+    {
+      logo: vscode,
+      name: 'VSCode',
+      description: 'Editor',
+    },
+  ],
+
+  app: [
+   
+    {
+      logo: Github,
+      name: 'Github',
+      description: 'Version Control',
+    },
+    {
+      logo: chatgpt,
+      name: 'ChatGPT',
+      description: 'Productivity',
+    },
+    {
+      logo: discord,
+      name: 'Discord',
+      description: 'Communication',
+    },
+    {
+      logo: duolingo,
+      name: 'Duolingo',
+      description: 'Education',
+    },
+    {
+      logo: spotify,
+      name: 'Spotify',
+      description: 'Music',
     }
   ]
- },
- {
-  name: 'Elsewhere',
-  links: [
-    {
-      name: 'Email',
-      id: 'mailto:morahlinmorahmorahlin@gmail.com',
-    },
-    {
-      name: 'LinkedIn',
-      id: '',
-    },
-    {
-      name: 'GitHub',
-      id: 'https://github.com/morahlin',
-    },
-
-
-     {
-      name: 'Facebook',
-      id: 'https://www.facebook.com/profile.php?id=100094192264039',
-    },
-  ]
- }
-
-]
+};
 
 export { 
-    know,
-  
-    Footlinks
+  know,
+  Footlinks,
+  tech
 };
