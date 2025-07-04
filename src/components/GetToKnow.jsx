@@ -25,14 +25,15 @@ const GetToKnow = () => {
        A Little About Me
       </h2>
 
-      <div className='flex flex-wrap items-start justify-around gap-[60px] max-w-full p-3 md:p-10 mt-[5%]'>
+           <div className='flex flex-wrap items-start justify-around gap-[55px] max-w-full p-3 md:p-10 mt-[5%]'>
         {know.map((about, index) => (
           <motion.div
             key={about.name}
             animate={animate ? 'show' : 'hidden'}
-            variants={fadeIn('left', 'spring', 0.4 * index, 0.75)}
-                className='flex flex-col items-center justify-between rounded-2xl h-auto md:h-[400px] w-full max-w-[350px] p-6 bg-[#0f172a] shadow-xl transition-transform duration-300 hover:scale-105'
-              >
+            variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+            className='know-cards cursor-pointer flex flex-col items-center text-center justify-center gap-5 rounded-[32px] h-[350px] md:h-[300px] w-[330px] md:w-[300px] overflow-hidden p-5 bg-[#191938] border-r-2'
+          >
+
             <Link to={`/${about.id}`} className='flex flex-col gap-7 items-center'>
               <p className='text-[32px] font-bold'>{about.name}</p>
             

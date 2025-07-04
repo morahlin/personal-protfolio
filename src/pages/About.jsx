@@ -49,11 +49,7 @@ My journey into web development has been an exciting ride fueled by curiosity, c
               </li>
               <li className='flex items-center gap-5'>
                 <img src={morahlinLogo} width={24} height={24} alt="Morahlin Logo" />
-                <span className='text-[28px]'></span> Write scalable backend logic, handle database modeling (NoSQL/Firestore), and manage authentication and user access.
-              </li>
-              <li className='flex items-center gap-5'>
-                <img src={morahlinLogo} width={24} height={24} alt="Morahlin Logo" />
-                <span className='text-[28px]'></span> Optimize application performance and troubleshoot bugs across the stack to maintain a stable and reliable product.
+                <span className='text-[28px]'></span> Write scalable backend logic, handle database modelin stack to maintain a stable and reliable product.
               </li>
               <li className='flex items-center gap-5'>
                 <img src={morahlinLogo} width={24} height={24} alt="Morahlin Logo" />
