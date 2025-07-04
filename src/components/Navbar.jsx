@@ -2,7 +2,7 @@ import Logo from '../assets/Logo.jsx'
 import  { useState } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
 import { sideVariants, itemVariants } from '../utils/motion.js'
-import { FaFacebook, FaGithub, FaLinkedin,  } from "react-icons/fa";
+import { FaFacebook, FaGithub,   } from "react-icons/fa";
 import { RiMenuFoldFill, RiCloseLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
@@ -69,10 +69,7 @@ function Navbar() {
                <a href="https://github.com/morahlin" target="_blank" rel="noreferrer">
                <FaGithub style={{ fontSize: '30px' }}/>
                </a>
-               <a href="https://www.linkedin.com/in/sefeakinbeye/" target="_blank" rel="noreferrer">
-               <FaLinkedin style={{ fontSize: '30px' }}/>
-               </a>
-
+               
                 <a href="https://www.facebook.com/profile.php?id=100094192264039" target="_blank" rel="noreferrer">
                <FaFacebook style={{ fontSize: '30px' }}/>
                </a>
@@ -96,9 +93,7 @@ function Navbar() {
             <a href="https://github.com/morahlin/" target="_blank" >
                <FaGithub style={{ fontSize: '25px' }}/>
                </a>
-               <a href="" target="_blank" >
-               <FaLinkedin style={{ fontSize: '25px' }}/>
-               </a>
+               
 
                 <a href="https://www.facebook.com/profile.php?id=100094192264039" target="_blank" >
                <FaFacebook style={{ fontSize: '25px' }}/>

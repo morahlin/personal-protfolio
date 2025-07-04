@@ -21,6 +21,8 @@ const Home = () => {
               <Projects />
                <GetToKnow />
               <GetInTouch />
+              
+              
             </div>
     </>
   )

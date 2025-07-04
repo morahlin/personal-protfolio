@@ -4,6 +4,7 @@ import Hero from './Hero'
 import Projects from './Projects'
 import GetInTouch from './GetInTouch'
 import GetToKnow from './GetToKnow'
+import Gallery from '../pages/Gallery'
 
 
 export {
@@ -13,6 +14,8 @@ export {
     Projects,
     GetInTouch,
     GetToKnow,
+    Gallery
+
 
   
 }

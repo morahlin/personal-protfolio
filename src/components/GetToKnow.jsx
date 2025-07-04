@@ -25,7 +25,7 @@ const GetToKnow = () => {
        A Little About Me
       </h2>
 
-      <div className='flex flex-wrap items-start justify-around gap-[55px] max-w-full p-3 md:p-10 mt-[5%]'>
+      <div className='flex flex-wrap items-start justify-around gap-[60px] max-w-full p-3 md:p-10 mt-[5%]'>
         {know.map((about, index) => (
           <motion.div
             key={about.name}

@@ -6,6 +6,8 @@ import Footer from './components/Footer.jsx'
 import About from './pages/About.jsx'
 import Stack from './pages/Stack.jsx'
 import Blog from './pages/Blog.jsx'
+import Bookshelf from './pages/Bookshelf.jsx'
+import Gallery from './pages/Gallery.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/stack" element={<Stack />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/bookshelf" element={<Bookshelf />} />
+            <Route path="/gallery" element={<Gallery />} />
+
         
           </Routes>
           <Footer />

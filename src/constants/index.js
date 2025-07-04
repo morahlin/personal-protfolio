@@ -1,4 +1,27 @@
-import { profolio, blogged, Morahlin } from '../assets';
+import { profolio, blogged, Morahlin} from '../assets';
+import headfirstJS from '../assets/headfirstJS.jpg';
+import jsVisually from '../assets/jsVisually.jpg';
+import secrets from '../assets/secrets.png';
+import smarter from '../assets/smarter.jpg';
+import data from '../assets/data.jpg';
+import eloquent from '../assets/eloquent.jpg';
+import novice from '../assets/novice.jpg';
+import modern from '../assets/modern.jpg';
+import css from '../assets/css.png';
+import steal from '../assets/steal.png';
+import atomic_habits from '../assets/atomic_habits.png';
+import greatestSalesman from '../assets/greatestSalesman.jpg';
+import harry from '../assets/harry.png';
+import Improbable from '../assets/Improbable.jpg';
+import vulture from '../assets/vulture.jpg';
+import Book from '../assets/Book.png';
+import figmaland from '../assets/figmaland.png';
+import menu_app from '../assets/menu_app.png';
+import clone from '../assets/clone.png';
+import sketch from '../assets/sketch.png';  
+import globe from '../assets/globe.png';
+
+
 
 
 import {
@@ -33,7 +56,7 @@ export const projects = [
   {
     name: "slider-crazy-effects",
     description:
-      "Slider Crazy Effects is a visually dynamic project featuring a custom-built image/content slider with eye-catching animations and transitions. Designed using modern frontend tools like React, TailwindCSS, and Framer Motion, this slider pushes beyond the basics — offering smooth interactions.",
+      "Slider Crazy Effects is a visually dynamic project featuring a custom-built image/content slider with eye-catching animations and transitions.",
     tags: [
       {
         name: "javascript",
@@ -55,7 +78,7 @@ export const projects = [
   {
     name: "Blog",
     description:
-      "A fully functional blog platform built with ReactJS and Firebase Firestore. Users can sign in with Google to create and manage blog posts. The app features real-time database integration.",
+      "A fully functional blog platform built with ReactJS and Firebase Firestore. Users can sign in with Google to create and manage blog posts4.",
     tags: [
       {
         name: "reactJS",
@@ -74,10 +97,14 @@ export const projects = [
     source_code_link: "https://github.com/morahlin/blog",
     live_preview_link: "https://morahlinblog.vercel.app/"
   },
+
+
+
+  
   {
     name: "Gradient Card",
     description:
-      "Gradient Card is a visually engaging UI component designed to showcase content within a stylish gradient background. Built using ReactJS and TailwindCSS, the card combines smooth color transitions with modern layout techniques to enhance user experience and interface aesthetics..",
+      "Gradient Card is a visually engaging UI component designed to showcase content within a stylish gradient background. Built using ReactJS and TailwindCSS.",
     tags: [
       {
         name: "css",
@@ -96,8 +123,76 @@ export const projects = [
     source_code_link: "https://github.com/morahlin/Gradient-card",
     live_preview_link: "https://gradient-card.vercel.app/"
   },
-];
+{
 
+ name: "landing page",
+ description:
+   "A landing page is a standalone web page designed to convert visitors into taking a specific action. It's often used for marketing campaigns, product launches, or promotions.",
+ tags: [
+   {
+     name: "reactJS",
+     color: "blue-text-gradient",
+   },
+   {
+     name: "framer-motion",
+     color: "green-text-gradient",
+   },
+   {
+     name: "aos",
+     color: "pink-text-gradient",
+   },
+ ],
+ image: figmaland,
+ source_code_link: "https://github.com/morahlin/landing-page",
+ live_preview_link: "https://landing-page-five-bice-40.vercel.app/#"
+},
+{
+ name: "MØRÅHŁĮŇ wheels",
+ description:
+   "Car websites are online platforms that provide information, services, or resources related to cars. They cater to various needs, including car buying, selling, reviews, news, and resources.",
+ tags: [
+   {
+     name: "reactJS",
+     color: "blue-text-gradient",
+   },
+   {
+     name: "tailwindcss",
+     color: "green-text-gradient",
+   },
+   {
+     name: "figma",
+     color: "pink-text-gradient",
+   },
+ ],
+ image: menu_app,
+ source_code_link: "https://github.com/morahlin/car-websites",
+ live_preview_link: "https://car-websites-bay.vercel.app/#home"
+},
+{
+ name: "Confetti",
+ description:
+   "A coffee website can serve various purposes, such as showcasing coffee-related products or services, sharing coffee knowledge, or providing a platform for coffee enthusiasts to connect. ",
+ tags: [
+   {
+     name: "reactjs",
+     color: "blue-text-gradient",
+   },
+   {
+     name: "tailwindcss",
+     color: "green-text-gradient",
+   },
+   {
+     name: "figma",
+     color: "pink-text-gradient",
+   },
+ ],
+ image: globe,
+ source_code_link: "https://github.com/morahlin/coffee",
+ live_preview_link: "https://morahlincoffee.vercel.app/#"
+},
+
+
+];
 const know = [
   {
     name: 'About me',
@@ -116,6 +211,13 @@ const know = [
     description: "Books and pieces of wisdom I've enjoyed reading",
     linkName: 'Visit site',
     id: 'bookshelf',
+  },
+  
+    {
+    name: 'gallery',
+    description: 'A pic of my projects.',
+    linkName: 'Visit site',
+    id: 'gallery',
   },
 ];
 
@@ -167,6 +269,26 @@ const Footlinks = [
     ]
   }
 ];
+
+
+const shelf = [
+    headfirstJS,
+    jsVisually,
+    secrets,
+    smarter,
+    data,
+    eloquent,
+    novice,
+    modern,
+    css,
+    steal,
+    atomic_habits,
+    greatestSalesman,
+    harry,
+    Improbable,  
+    vulture,
+    Book,
+]
 
 const tech = {
   dev: [
@@ -281,5 +403,6 @@ const tech = {
 export { 
   know,
   Footlinks,
-  tech
+  tech,
+  shelf
 };
